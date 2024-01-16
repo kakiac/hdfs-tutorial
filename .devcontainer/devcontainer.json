@@ -1,0 +1,15 @@
+{
+    "name": "Hadoop + Java Dev Container",
+    "image": "mcr.microsoft.com/vscode/devcontainers/java:0-11",
+    "forwardPorts": [50070, 50075, 50090, 50020, 50010, 50030, 50060],
+    "settings": { 
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": ["vscjava.vscode-java-pack"],
+    "remoteUser": "root",
+    "features": {
+        "ghcr.io/devcontainers/features/java:1": {},
+        "ghcr.io/devcontainers-contrib/features/hadoop-sdkman:2": {}
+    }
+}
+
